@@ -1,0 +1,233 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_gravity="center_horizontal"
+    android:background="@drawable/football">
+
+    <LinearLayout
+        android:layout_weight="10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/TeamA"
+            android:layout_weight="1">
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="SF 49ers"
+                android:textColor="#C70039"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-medium"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="0"
+                android:id="@+id/team_a_score"
+                android:textSize="56sp"
+                android:textColor="#C70039"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-light"/>
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="Timeouts Remaining"
+                android:textStyle="bold"
+                android:textColor="#C70039"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif-medium"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="3"
+                android:textColor="#C70039"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:id="@+id/timeOutsA"
+                android:fontFamily="sans-serif-medium"/>
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="touchdown"
+                android:onClick="touchdownA"/>
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="point conversion"
+                android:onClick="pointConversionA"/>
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="field goal"
+                android:onClick="fieldGoalA"/>
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="safety"
+                android:onClick="safetyA"/>
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="timeout"
+                android:onClick="timeOutA"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="2dp"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:layout_marginTop="24dp"
+            android:layout_marginBottom="24dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:id="@+id/TeamB"
+            android:layout_weight="1">
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="NC Panthers"
+                android:textColor="#0B3D8B"
+                android:textStyle="bold"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-medium"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="0"
+                android:id="@+id/team_b_score"
+                android:textSize="56sp"
+                android:textColor="#0B3D8B"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-light"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="Timeouts Remaining"
+                android:textColor="#0B3D8B"
+                android:textStyle="bold"
+                android:textSize="14sp"
+                android:fontFamily="sans-serif-medium"/>
+
+            <TextView
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="4dp"
+                android:text="3"
+                android:textColor="#0B3D8B"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:id="@+id/timeOutsB"
+                android:fontFamily="sans-serif-medium"/>
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="touchdown"
+                android:onClick="touchdownB"/>
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="point conversion"
+                android:onClick="pointConversionB"/>
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="field goal"
+                android:onClick="fieldGoalB"/>
+
+            <Button
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="safety"
+                android:onClick="safetyB"/>
+            <Button
+                android:layout_weight="1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="8dp"
+                android:text="timeout"
+                android:onClick="timeOutB"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="reset"
+        android:layout_gravity="center_horizontal"
+        android:onClick="resetGame"/>
+
+    <Button
+        android:layout_weight="1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="reset timeouts"
+        android:layout_marginBottom="32dp"
+        android:layout_gravity="center_horizontal"
+        android:onClick="resetTimeOuts"/>
+</LinearLayout>
